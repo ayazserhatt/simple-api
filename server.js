@@ -59,6 +59,10 @@ async function outputToUrl(output) {
   return "";
 }
 
+app.get("/", (_req, res) => {
+  res.send("simple-api çalışıyor");
+});
+
 app.get("/api/healthz", (_req, res) => {
   res.json({ status: "ok" });
 });
